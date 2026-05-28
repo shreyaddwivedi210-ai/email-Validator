@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  /* font-family: "Noto Sans", sans-serif ;
+  font-family: "Poppins", sans-serif; */
+  font-weight: 100;
+  font-style: normal; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #10002b;
+    color: white;
+    padding: 13px 12px;
+    font-size: 25px;
+
+}
+ul{
+    display: flex;
+
+}
+ul li{
+    list-style: none;
+    padding: 13px 26px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: rgb(208, 204, 204);
+
+}
+main{
+    min-height: 90vh;
+    background-color: #e0aaff;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-color: #10002b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    font-weight: bolder;
+    
+}
+#resultCont img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+   width: 230;
+}
+/* General form styling */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #9d4edd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #eb39ff;
+  outline: none;
+}
+
+/* Submit button */
+#submitBtn {
+  width: 100%;
+  padding: 10px;
+  background: #5a189a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#submitBtn:hover {
+  background: #a029f5;
+}
+@media only screen and (max-width : 600px) {
+   nav{
+    flex-direction: column;
+   }
+   .container{
+        font-size: 12px; 
+    }
+    input[ type = "text"]{
+        width: 100%;
+         
+    }
+    .logo{
+        padding: 6px;
+    }
+
+}
+.container{ 
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 15px;
+    
+}
+
+.container h1{
+    padding: 12px 0;
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
